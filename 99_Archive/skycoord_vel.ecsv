@@ -1,0 +1,44 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: skycoord.x, unit: m / s, datatype: float64}
+# - {name: skycoord.y, unit: m / s, datatype: float64}
+# - {name: skycoord.z, unit: m / s, datatype: float64}
+# meta: !!omap
+# - __serialized_columns__:
+#     skycoord:
+#       __class__: astropy.coordinates.sky_coordinate.SkyCoord
+#       frame: tete
+#       location: !astropy.coordinates.earth.EarthLocation
+#         ellipsoid: WGS84
+#         x: !astropy.units.Quantity
+#           unit: &id001 !astropy.units.Unit {unit: km}
+#           value: 0.0
+#         y: !astropy.units.Quantity
+#           unit: *id001
+#           value: 0.0
+#         z: !astropy.units.Quantity
+#           unit: *id001
+#           value: 0.0
+#       obstime: !astropy.time.Time {format: jyear_str, in_subfmt: '*', jd1: 2451545.0, jd2: 0.0, out_subfmt: '*', precision: 3, scale: tt}
+#       representation_type: cartesian
+#       x: !astropy.table.SerializedColumn
+#         __class__: astropy.units.quantity.Quantity
+#         unit: !astropy.units.Unit {unit: m / s}
+#         value: !astropy.table.SerializedColumn {name: skycoord.x}
+#       y: !astropy.table.SerializedColumn
+#         __class__: astropy.units.quantity.Quantity
+#         unit: !astropy.units.Unit {unit: m / s}
+#         value: !astropy.table.SerializedColumn {name: skycoord.y}
+#       z: !astropy.table.SerializedColumn
+#         __class__: astropy.units.quantity.Quantity
+#         unit: !astropy.units.Unit {unit: m / s}
+#         value: !astropy.table.SerializedColumn {name: skycoord.z}
+# schema: astropy-2.0
+skycoord.x skycoord.y skycoord.z
+-1139.16858 7382.27114 -1534.69917
+-1096.67618 7333.47231 -1780.38542
+-1053.07412 7276.62229 -2024.25251
+-1008.27791 7211.8041 -2266.3337
+-962.43639 7138.89095 -2505.50592
+-915.47684 7057.75584 -2741.72939

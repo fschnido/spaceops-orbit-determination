@@ -1,0 +1,3 @@
+﻿"Timestamp [UTC]";"GPS current [mA]";"I2C current [mA]";"GPS enabled";"GPS locked";"Position velocity time bound";"GPS I2C enabled";"GPS I2C locked";"GPS TMP bound";"GPS external TMP bound";"GPS channel data bound"
+"2024-05-15 15:08:46.8";"165";"3.8";"1";"0";"1";"1";"0";"1";"1";"0"
+"2024-05-15 15:13:46.8";"170.4";"3.8";"1";"0";"1";"1";"0";"1";"1";"0"

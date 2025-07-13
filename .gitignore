@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / C extensions
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE and OS-specific files
+.vscode/
+.idea/
+.DS_Store

@@ -70,3 +70,44 @@ These notebooks demonstrate the case where you have OPMs from your launch provid
 ### References:
 
  * This work relies heavily on previous work from David Vallado and Paul Crawford in their 2008 AIAA paper titled "SGP4 Orbit Determination" as well as their released C++ code. Dr. Vallado's textbook "Fundamentals of Astrodynamics and Applications" is also an excellent reference to further understand the Differential Corrector model. https://celestrak.org/publications/AIAA/2008-6770/AIAA-2008-6770.pdf
+
+### Notes for use in space ops course
+1. Make sure to have python3.9 (3.9.13 is the last release) installed since the GMAT API needs it.
+2. Create venv with python3.9
+3. Install requirements in venv
+
+## Working with venv
+See the [documentation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) for working with venv's.
+
+1. Create venv with 
+```
+python -m venv <environment_name>
+```
+
+2. Activate the environment:
+
+Linux:
+```
+source <environment_name>/bin/activate 
+```
+
+Windows
+```
+<environment_name>/scripts/activate.bat
+```
+
+3. Install packages:
+```
+pip install -r requirements.txt
+```
+
+When your done deactivate the venv with 
+```
+deactivate
+```
+
+Note:
+If the venv does not activate on windows because "running scripts is disable on this system" run the following command:
+```
+Set-ExecutionPolicy Unrestricted -Scope Process
+```
